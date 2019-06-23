@@ -19,6 +19,7 @@
 ###     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ###
 
+
  #SET HERE WHICH EXTENSIONS SHOULD BE PROCESSED - CASE INSENSITIVE
 A_EXTENSIONS_TO_PROCESS="jpg jpeg arw cr2 raw"
  #SET THE FORMAT DESIRED HERE - SEE exiftool DOCUMENTATION FOR REFERENCE
