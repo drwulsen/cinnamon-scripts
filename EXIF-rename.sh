@@ -42,11 +42,9 @@ zenity --question --width=600 --text="Do you want to convert the filename of sel
 If a folder was selected, all sub-directories and files will be processed!"
  #if the dialog exited with something else than yes, exit
 if [ $? -ne 0 ]; then
-	zenity --info --text "exiting"
 	exit 0;
 else
 	for i in "${A_FILES[@]}"; do
 		exiftool -r "${STR_EXIF_FILETYPES}" '-filename<CreateDate' -d "${STR_FORMAT}" "$i"
 	done
 fi
-exit 0
